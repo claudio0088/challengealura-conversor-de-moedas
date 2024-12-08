@@ -1,2 +1,11 @@
-public record Moedas(String ARS,String BOB, String BRL, String COP, int USD ) {
+public record Moedas(String baseCode,double ars,double bob,
+                     double brl, double cop
+        ,double usd) {
+
+    public double converterDolarParaReal(double valor){
+        return  valor * brl;
+
+    }
+
 }
+
